@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Book Recommendation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <span>📚</span> Book Recoomender
+            </div>
+            <div class="nav-tabs">
+                <button class="nav-tab active" onclick="switchTab('discover')">Discover</button>
+                <button class="nav-tab" onclick="switchTab('library')">My Library</button>
+                <button class="nav-tab" onclick="switchTab('recommendations')">AI Recommendations</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- DISCOVER SECTION -->
+        <div id="discoverSection" class="section active">
+            <div class="hero">
+                <h1>Discover Your Next Great Read</h1>
+                <p>AI-powered book recommendations tailored just for you</p>
+            </div>
+
+            <div class="stats-panel">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalBooks">0</div>
+                    <div class="stat-label">Books Found</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="libraryCount">0</div>
+                    <div class="stat-label">In Library</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="favoriteCount">0</div>
+                    <div class="stat-label">Favorites</div>
+                </div>
+            </div>
+
+            <div class="search-panel">
+                <div class="search-box">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="searchInput" class="search-input" 
+                               placeholder="Search by title, author, ISBN, or describe what you want to read...">
+                        <button class="voice-search" onclick="startVoiceSearch()" title="Voice Search">🎤</button>
+                    </div>
+                    <button class="btn btn-primary" onclick="searchBooks()">
+                        <span>🔍 Search</span>
+                    </button>
+                </div>
+
+                <div class="advanced-filters">
+                    <div class="filter-group">
+                        <label>Category</label>
+                        <select class="filter-input" id="categoryFilter">
+                            <option value="">All Categories</option>
+                            <option value="fiction">Fiction</option>
+                            <option value="science">Science</option>
+                            <option value="technology">Technology</option>
+                            <option value="business">Business</option>
+                            <option value="self-help">Self Help</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="mystery">Mystery</option>
+                            <option value="romance">Romance</option>
+                            <option value="biography">Biography</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Sort By</label>
+                        <select class="filter-input" id="sortFilter">
+                            <option value="relevance">Relevance</option>
+                            <option value="newest">Newest First</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Language</label>
+                        <select class="filter-input" id="langFilter">
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="de">German</option>
+                            <option value="hi">Hindi</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Print Type</label>
+                        <select class="filter-input" id="printFilter">
+                            <option value="all">All</option>
+                            <option value="books">Books Only</option>
+                            <option value="magazines">Magazines</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="ai-suggestions">
+                    <h3>💡 AI Suggestions</h3>
+                    <div class="suggestion-tags">
+                        <span class="tag" onclick="quickSearch('trending books 2024')">🔥 Trending Now</span>
+                        <span class="tag" onclick="quickSearch('bestseller fiction')">⭐ Bestsellers</span>
+                        <span class="tag" onclick="quickSearch('award winning novels')">🏆 Award Winners</span>
+                        <span class="tag" onclick="quickSearch('science fiction classics')">🚀 Sci-Fi Classics</span>
+                        <span class="tag" onclick="quickSearch('self improvement')">💪 Self Growth</span>
+                        <span class="tag" onclick="quickSearch('mystery thriller')">🔍 Mystery</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Searching books...</p>
+            </div>
+
+            <div class="books-grid" id="booksGrid"></div>
+
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <div class="empty-icon">📚</div>
+                <h2>No books found</h2>
+                <p>Try different search terms or filters</p>
+            </div>
+        </div>
+
+        <!-- LIBRARY SECTION -->
+        <div id="librarySection" class="section">
+            <div class="hero">
+                <h1>My Personal Library</h1>
+                <p>Manage your reading journey</p>
+            </div>
+
+            <div class="reading-list" id="libraryContent">
+                <h2>📖 Your Collection</h2>
+                <div id="libraryList"></div>
+            </div>
+        </div>
+
+        <!-- RECOMMENDATIONS SECTION -->
+        <div id="recommendationsSection" class="section">
+            <div class="hero">
+                <h1>AI-Powered Recommendations</h1>
+                <p>Based on your reading preferences and history</p>
+            </div>
+
+            <div class="search-panel">
+                <h3>Get Personalized Recommendations</h3>
+                <p style="margin: 15px 0; color: #64748b;">Tell us what you like, and our AI will find similar books</p>
+                <div class="search-box">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="recommendInput" class="search-input" 
+                               placeholder="Enter a book title you loved...">
+                    </div>
+                    <button class="btn btn-primary" onclick="getRecommendations()">
+                        <span>🤖 Get Recommendations</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="books-grid" id="recommendationsGrid"></div>
+        </div>
+    </div>
+
+    <!-- BOOK DETAIL MODAL -->
+    <div class="modal" id="bookModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
