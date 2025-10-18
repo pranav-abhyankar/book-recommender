@@ -48,3 +48,42 @@
 - **Design**: CSS Grid, Flexbox, CSS Variables
 - **Features**: Responsive Design, Progressive Web App ready
 
+## 🎯 How to Use
+
+### 🔍 Discovering Books
+1. **Search**: Enter any book title, author, or keyword
+2. **Filter**: Use advanced filters for precise results
+3. **Browse**: Explore curated suggestions and trending topics
+4. **Voice Search**: Click the microphone icon for voice input
+
+### 📚 Managing Your Library
+1. **Add to Library**: Click the bookmark icon on any book card
+2. **Favorite Books**: Click the heart icon to mark favorites
+3. **View Details**: Click on any book card for detailed information
+4. **Organize**: Use the Library tab to manage your collection
+
+### 🎯 Getting Recommendations
+1. **Personal Recommendations**: Visit the Recommendations tab
+2. **Similar Books**: Enter a book title to find similar reads
+3. **AI Suggestions**: Explore personalized picks based on your history
+
+## 🌈 Key Highlights
+
+### 🎨 Design Features
+- **Gradient Backgrounds**: Beautiful purple-to-pink gradients
+- **Smooth Animations**: CSS transitions and hover effects
+- **Card-based Layout**: Modern, Pinterest-style book grid
+- **Glassmorphism**: Semi-transparent elements with blur effects
+
+### ⚡ Performance Features
+- **Fast Loading**: Optimized image loading and caching
+- **Responsive**: Works seamlessly on desktop, tablet, and mobile
+- **Progressive Enhancement**: Graceful degradation for older browsers
+- **Local Storage**: Instant access to your personal data
+
+### 🔧 Technical Features
+- **Modular JavaScript**: Clean, maintainable code structure
+- **CSS Variables**: Consistent theming and easy customization
+- **Error Handling**: Robust API error management
+- **Accessibility**: Keyboard navigation and screen reader support
+
