@@ -36,7 +36,11 @@
 
 ## 🚀 Demo
 
-![BookWise Demo](https://via.placeholder.com/800x400?text=BookWise+Demo+Screenshot)
+#![BookWise Demo](https://via.placeholder.com/800x400?text=BookWise+Demo+Screenshot)
+<img width="1883" height="1083" alt="image" src="https://github.com/user-attachments/assets/a4e8fb9a-dd04-4afe-b161-10e881032392" />
+
+
+
 
 *Experience the magic of personalized book discovery!*
 
