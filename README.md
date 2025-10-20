@@ -37,8 +37,15 @@
 ## 🚀 Demo
 
 #![BookWise Demo](https://via.placeholder.com/800x400?text=BookWise+Demo+Screenshot)
+
+
 <img width="1883" height="1083" alt="image" src="https://github.com/user-attachments/assets/a4e8fb9a-dd04-4afe-b161-10e881032392" />
 
+
+<img width="1904" height="995" alt="image" src="https://github.com/user-attachments/assets/62769291-9a9b-4472-bdd4-83b1a5b75f21" />
+
+
+<img width="1902" height="982" alt="image" src="https://github.com/user-attachments/assets/55db8af5-49cf-415f-9ca5-daa9c8f9d710" />
 
 
 
