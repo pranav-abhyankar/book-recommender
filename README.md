@@ -38,16 +38,17 @@
 
 #![BookWise Demo](https://via.placeholder.com/800x400?text=BookWise+Demo+Screenshot)
 
+---
 
 <img width="1883" height="1083" alt="image" src="https://github.com/user-attachments/assets/a4e8fb9a-dd04-4afe-b161-10e881032392" />
 
+---
+<img width="1896" height="1000" alt="image" src="https://github.com/user-attachments/assets/8ab91989-d4f2-4f19-9b36-1feb9e808191" />
 
-<img width="1904" height="995" alt="image" src="https://github.com/user-attachments/assets/62769291-9a9b-4472-bdd4-83b1a5b75f21" />
+---
+<img width="1904" height="1002" alt="image" src="https://github.com/user-attachments/assets/99a58073-4891-4a52-bde1-5c9e118fdd07" />
 
-
-<img width="1902" height="982" alt="image" src="https://github.com/user-attachments/assets/55db8af5-49cf-415f-9ca5-daa9c8f9d710" />
-
-
+---
 
 *Experience the magic of personalized book discovery!*
 
