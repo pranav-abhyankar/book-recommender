@@ -36,7 +36,7 @@
 
 ## 🚀 Demo
 
-#![BookWise Demo](https://via.placeholder.com/800x400?text=BookWise+Demo+Screenshot)
+![BookWise Demo]((https://pranav-abhyankar.github.io/book-recommender/))
 
 ---
 
