@@ -38,6 +38,7 @@
 
 ![BookWise Demo]((https://pranav-abhyankar.github.io/book-recommender/))
 
+*Experience the magic of personalized book discovery!*
 ---
 
 <img width="1883" height="1083" alt="image" src="https://github.com/user-attachments/assets/a4e8fb9a-dd04-4afe-b161-10e881032392" />
@@ -49,9 +50,6 @@
 <img width="1904" height="1002" alt="image" src="https://github.com/user-attachments/assets/99a58073-4891-4a52-bde1-5c9e118fdd07" />
 
 ---
-
-*Experience the magic of personalized book discovery!*
-
 ## 🛠️ Tech Stack
 
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
