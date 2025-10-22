@@ -145,6 +145,7 @@ This project is licensed under the MIT License.
 - 🌈 **CSS Gradients** for stunning visual effects
 - 💡 **Open Source Community** for inspiration and resources
 
+---
 
 ### 🌟 Star this repository if you found it helpful! 🌟
 
